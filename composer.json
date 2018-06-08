@@ -1,0 +1,13 @@
+{
+    "name": "root/scripts",
+    "description": "scripts para excel y pdf",
+    "authors": [
+        {
+            "name": "oxisrock",
+            "email": "franciscoaular18@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.2"
+    }
+}
