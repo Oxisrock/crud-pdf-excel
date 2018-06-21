@@ -14,12 +14,12 @@ $zip = $_POST['zip'];
 $tel = $_POST['tel'];
 $lic = $_POST['lic'];
 $iss = $_POST['iss'];
-$md = $_POST['md'];
-$do = $_POST['do'];
-$pa = $_POST['pa'];
-$cr = $_POST['cr'];
-$an = $_POST['an'];
-$op = $_POST['op'];
+$md = isset($_POST['md']);
+$do = isset($_POST['do']);
+$pa = isset($_POST['pa']);
+$cr = isset($_POST['cr']);
+$an = isset($_POST['an']);
+$op = isset($_POST['op']);
 $nregister = $_POST['nregister'];
 // $dni = $_POST['dni'];
 // $age = $_POST['age'];
@@ -37,7 +37,7 @@ $sheet = $spreadsheet->getActiveSheet();
 $sheet->setCellValue('A2', $fname);
 $sheet->setCellValue('B2', $address);
 $sheet->setCellValue('C2', $city);
-$sheet->setCellValue('D2', $zip);
+$sheet->setCellValue('D2', $state);
 $sheet->setCellValue('E2', $zip);
 $sheet->setCellValue('F2', $tel);
 $sheet->setCellValue('G2', $lic);
@@ -49,6 +49,52 @@ $sheet->setCellValue('L2', $cr);
 $sheet->setCellValue('M2', $an);
 $sheet->setCellValue('N2', $op);
 $sheet->setCellValue('O2', $nregister);
+$sheet->setCellValue('Q2', $fname);
+$sheet->setCellValue('R2', $address);
+$sheet->setCellValue('S2', $city);
+$sheet->setCellValue('T2', $state);
+$sheet->setCellValue('U2', $zip);
+$sheet->setCellValue('V2', $tel);
+$sheet->setCellValue('W2', $lic);
+$sheet->setCellValue('X2', $iss);
+$sheet->setCellValue('Y2', $md);
+$sheet->setCellValue('Z2', $do);
+$sheet->setCellValue('AA2', $pa);
+$sheet->setCellValue('AB2', $cr);
+$sheet->setCellValue('AC2', $an);
+$sheet->setCellValue('AD2', $op);
+$sheet->setCellValue('AE2', $nregister);
+$sheet->setCellValue('Q2', $fname);
+$sheet->setCellValue('R2', $address);
+$sheet->setCellValue('S2', $city);
+$sheet->setCellValue('T2', $state);
+$sheet->setCellValue('U2', $zip);
+$sheet->setCellValue('V2', $tel);
+$sheet->setCellValue('W2', $lic);
+$sheet->setCellValue('X2', $iss);
+$sheet->setCellValue('Y2', $md);
+$sheet->setCellValue('Z2', $do);
+$sheet->setCellValue('AA2', $pa);
+$sheet->setCellValue('AB2', $cr);
+$sheet->setCellValue('AC2', $an);
+$sheet->setCellValue('AD2', $op);
+$sheet->setCellValue('AE2', $nregister);
+$sheet->setCellValue('AH2', $fname);
+$sheet->setCellValue('AI2', $address);
+$sheet->setCellValue('AJ2', $city);
+$sheet->setCellValue('AK2', $state);
+$sheet->setCellValue('AL2', $zip);
+$sheet->setCellValue('AM2', $tel);
+$sheet->setCellValue('AN2', $lic);
+$sheet->setCellValue('AO2', $iss);
+$sheet->setCellValue('AP2', $md);
+$sheet->setCellValue('AQ2', $do);
+$sheet->setCellValue('AR2', $pa);
+$sheet->setCellValue('AS2', $cr);
+$sheet->setCellValue('AT2', $an);
+$sheet->setCellValue('AU2', $op);
+$sheet->setCellValue('AV2', $nregister);
+
 /*Se carga una nueva instancia para escribir, usando nuestro documento XLSX*/
 $writer = new \PhpOffice\PhpSpreadsheet\Writer\Xlsx($spreadsheet);
 
@@ -85,5 +131,5 @@ $sheet->fromArray(
         'A4'         // Top left coordinate of the worksheet range where
                      //    we want to set these values (default is A1)
     );
-    
+
 ?>
