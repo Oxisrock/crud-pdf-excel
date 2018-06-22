@@ -30,8 +30,8 @@
 
       <!-- Modal footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-success" data-dismiss="modal">Buy</button>
+        <a href="http://18.217.182.184/" type="button" class="btn btn-danger" data-dismiss="modal">Close</a>
+        <a href="http://18.217.182.184/?product=form-clinic" type="button" class="btn btn-success" data-dismiss="modal">Buy</a>
       </div>
 
     </div>
