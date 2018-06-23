@@ -8,30 +8,23 @@
 </style>
 </head>
 <body>
-  <!-- Button to Open the Modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-  Open modal
-</button>
-
 <!-- The Modal -->
-<div class="modal" id="myModal">
+<div class="modal" id="myModal" style="display: block;">
   <div class="modal-dialog">
     <div class="modal-content">
 
         <button type="button" class="close text-right" style="padding: 1rem;" data-dismiss="modal">&times;</button>
 
       <!-- Modal body -->
-      <object type="application/pdf" data="pdf-water.pdf" style="height: 500px;width: 100%;">
       <div id="my-container" class="modal-body">
 
       </div>
-    </object>
-      <!-- <canvas id="canvas" width="400" height="400"></canvas> -->
+    <!-- <canvas id="canvas" width="400" height="400"></canvas> -->
 
       <!-- Modal footer -->
       <div class="modal-footer">
-        <a href="http://18.217.182.184/" type="button" class="btn btn-danger" data-dismiss="modal">Close</a>
-        <a href="http://18.217.182.184/?product=form-clinic" type="button" class="btn btn-success" data-dismiss="modal">Buy</a>
+        <a href="http://18.217.182.184/" type="button" class="btn btn-danger">Close</a>
+        <a href="http://18.217.182.184/?product=form-clinic" type="button" class="btn btn-success">Buy</a>
       </div>
 
     </div>
@@ -45,6 +38,6 @@
 var options = {
    pdfOpenParams: { view: 'FitV', page: '2', scrollbar: '1', toolbar: '0', statusbar: '0', messages: '0', navpanes: '0', }
 };
-PDFObject.embed("pdf-water.pdf", "#my-container", options);
+PDFObject.embed("nuevo.pdf", "#my-container", options);
 </script>
 </html>
