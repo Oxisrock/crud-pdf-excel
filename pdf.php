@@ -7,6 +7,10 @@
 .pdfobject { border: 1px solid #666; }
 </style>
 </head>
+<?php
+function setExpires($expires) {
+header('Expires: '.gmdate('D, d M Y H:i:s', time()+$expires).'GMT');}?>
+<?php header('Expires: Mon, 26 Jul 1997 05:00:00 GMT'); header('Cache-Control: no-store, no-cache, must-revalidate'); header('Cache-Control: post-check=0, pre-check=0', FALSE); header('Pragma: no-cache'); ?>
 <body>
 <!-- The Modal -->
 <div class="modal" id="myModal" style="display: block;">
